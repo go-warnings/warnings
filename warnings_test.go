@@ -8,6 +8,8 @@ import (
 	w "gopkg.in/warnings.v0"
 )
 
+var _ error = List{}
+
 type warn string
 
 func (w warn) Error() string { return string(w) }
